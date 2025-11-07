@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="title">Welcome! 👋</h1>
+            <p class="subtitle">What's your name?</p>
+            <form action="/greet" method="POST">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        name="name" 
+                        placeholder="Enter your name" 
+                        required
+                        class="input-field"
+                        autofocus
+                    >
+                </div>
+                <button type="submit" class="btn">Say Hello!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

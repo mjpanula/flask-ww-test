@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello {{ name }}!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card greeting-card">
+            <h1 class="greeting">Hello, {{ name }}! 🎉</h1>
+            <p class="message">It's great to meet you!</p>
+            <a href="/" class="btn btn-secondary">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>
